@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AdditionController {
 
-    @GetMapping("/add")
-    public double add(@RequestParam(required = true) double a,@RequestParam(required = true) double b) {
-        return a+b;
-    }
+  @GetMapping("/add")
+  public double add(
+      @RequestParam(required = true) double a, @RequestParam(required = true) double b) {
+    return a + b;
+  }
 }
